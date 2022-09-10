@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import { Routes, Route, Link } from 'react-router-dom';
 import MainPage from './mainpage/MainPage';
 import Login from './login/Login';
+import Chat from './chat/Chat';
+import Match from './match/Match'
 import './App.css';
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage/>} />
         <Route path="login" element={<Login/>} />
+        <Route path="chat" element={<Chat/>} />
+        <Route path="match" element={<Match/>} />
       </Routes>
     </div>
   );
