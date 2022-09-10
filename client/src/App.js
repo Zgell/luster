@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [data, setData] = React.useState(null)
+  const [data, setData] = React.useState(null) // States are used for default values to be rendered
 
   React.useEffect(() => {
     fetch("/api")
