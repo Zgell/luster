@@ -10,14 +10,12 @@ Dating app project for the 2022 ShellHacks hackathon.
 
 3. Install the dependencies for the project by going into the `server/` folder and doing the following:
 
-`cd server`
 `npm i`
 
 This installs all NodeJS dependencies for the server (namely Express).
 
 4. Now, go into the `client/` folder and do the same thing.
 
-`cd ../client`
 `npm i`
 
 This installs React and its dependencies so that the frontend can render correctly.
