@@ -10,6 +10,20 @@ import './App.css';
 function App() {
   const [data, setData] = React.useState(null) // States are used for default values to be rendered
 
+  // UserID
+  // Email
+  // Password
+  // First Name, Last Name
+  // NickName
+  // Phone # 
+  // Gender
+  // Sexuality
+  // Profile Picture
+  // Age
+
+  // React is used to call a function as soon as the page loads
+  // should do more research on it tho.
+
   React.useEffect(() => {
     fetch("/api", {
       method: 'POST',
@@ -26,6 +40,8 @@ function App() {
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
+
+  // Use the fetch in a function
   
   /*
   <header className="App-header">
