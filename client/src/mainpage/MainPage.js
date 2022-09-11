@@ -76,7 +76,7 @@ import logo from '../logo.svg';
 const MainPage = () => {
   return (
     // <div className={[styles.bgimg, w3styles['w3-display-container'], w3styles['animate-gradient-opacity'], w3styles['w3-text-white']]}>
-    <div className="bgimg w3-display-container animate-gradient-opacity w3-text-white">
+    <div className="bgimg w3-display-container animate-gradient-opacity w3-text-white display-middle-container">
       <div className="top-left-corner-title">
           Dating App
       </div>

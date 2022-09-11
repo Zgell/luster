@@ -20,11 +20,16 @@ h1, h2, h3, p {  /* Universal font override for consistent theming */
     background-position: center;
     background-size: cover;
 };
-
+.container-display-middle {
+    position: relative;
+}
 .display-middle {
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
 }
 .primary-title {  /* The big title on the front of the main page */
     font-family: 'Josefin Sans', sans-serif;
