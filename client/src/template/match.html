@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dating App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+        <link rel="stylesheet" href="w3.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet"> 
+        <style>
+            body {background: rgb(241, 67, 9)}
+            body, h1 {
+                font-family: 'Josefin Sans', sans-serif;
+            }
+            body, html {height: 100%}
+            .bgimg {
+                background: rgb(241,67,9);
+                background: linear-gradient(120deg, rgba(241,67,9,1) 0%, rgba(241,9,9,1) 45%, rgba(217,93,143,1) 85%, rgba(217,93,202,1) 100%);
+                min-height: 100%;
+                background-position: center;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="bgimg w3-display-container animate-gradient-opacity w3-text-white">
+            <h1 class="find-a-match-title">Find a Match</h1>
+            <div class="w3-display-middle">
+                <!-- Create React function to generate these cards? -->
+                <div class="w3-card-4">
+                    <div class="match-card-container">
+                        <h1 class="match-card-title">Title</h1>
+                    </div>
+                    <div class="match-card-container">
+                        <img src='nopic.png' class="w3-round match-card-image"/>
+                    </div>
+                    <div class="match-card-container">
+                        <p class="match-card-bio"><b>Bio</b></p>
+                        <p class="match-card-bio" style="max-width: 512px; word-wrap: break-word">
+                            This is just some sample text I invented to simulate multiple lines of bio text. 
+                            This is where people would write about their interests
+                            and preferences, as well as other stuff.
+                        </p>
+                    </div>
+                    <div class="match-card-container">
+                        <button class="rounded-button w3-xlarge w3-round-xxlarge">Let's Chat!</button>
+                    </div>
+                    <button class="w3-button match-card-swipe-button w3-display-left">&#10094;</button>
+                    <button class="w3-button match-card-swipe-button w3-display-right">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
