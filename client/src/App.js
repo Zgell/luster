@@ -11,7 +11,18 @@ function App() {
   const [data, setData] = React.useState(null) // States are used for default values to be rendered
 
   React.useEffect(() => {
-    fetch("/api")
+    fetch("/api", {
+      method: 'POST',
+      mode: 'cors',
+      body: JSON.stringify({
+        title: 'This is a title',
+        subtitle: 'This is the subtitle!'
+      }),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    })
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
