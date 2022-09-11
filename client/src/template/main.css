@@ -85,6 +85,7 @@ h1, h2, h3, p {  /* Universal font override for consistent theming */
     clear: both;
 }
 .match-card-title {
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 48px;
     color: white;
     text-align: center;
@@ -96,8 +97,11 @@ h1, h2, h3, p {  /* Universal font override for consistent theming */
     max-width: 75%;
 }
 .match-card-bio {
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
     color: white;
+    max-width: 512px;
+    word-wrap: break-word;
 }
 .match-card-swipe-button {  /* To be used alongside w3-button */
     height: 50%;

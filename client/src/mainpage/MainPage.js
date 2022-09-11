@@ -74,9 +74,6 @@ import { useNavigate } from 'react-router-dom';
 //   </div>;
 // }
 
-function redirectToLogin() {
-}
-
 const MainPage = () => {
   let navigate = useNavigate();
   const onButtonClick = () => {
