@@ -7,6 +7,7 @@ import './MainPage.css';
 
 import { Link } from 'react-router-dom';
 import logo from '../logo.svg';
+import { useNavigate } from 'react-router-dom';
 
 /*
 <div className="App">
@@ -73,7 +74,14 @@ import logo from '../logo.svg';
 //   </div>;
 // }
 
+function redirectToLogin() {
+}
+
 const MainPage = () => {
+  let navigate = useNavigate();
+  const onButtonClick = () => {
+    navigate("/login");
+  }
   return (
     // <div className={[styles.bgimg, w3styles['w3-display-container'], w3styles['animate-gradient-opacity'], w3styles['w3-text-white']]}>
     <div className="bgimg w3-display-container animate-gradient-opacity w3-text-white display-middle-container">
@@ -85,8 +93,8 @@ const MainPage = () => {
         <hr className="w3-border-white primary-divider" />
         <p className="primary-subtitle w3-center">Join now to find the love of your life.</p>
         <div className="w3-center">
-          <button className="rounded-button w3-xlarge w3-round-xxlarge">Sign Up</button>
-          <button className="rounded-button w3-xlarge w3-round-xxlarge">Log In</button>
+          <button className="rounded-button w3-xlarge w3-round-xxlarge" onClick={onButtonClick}>Sign Up</button>
+          <button className="rounded-button w3-xlarge w3-round-xxlarge" onClick={onButtonClick}>Log In</button>
         </div>
       </div>
     </div>
