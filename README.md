@@ -4,7 +4,7 @@ I participated in a group of 5 programmers (myself included) to see what we coul
 Since the project was an extremely ambitious idea for a hackathon, we were not able to finish everything we hoped to achieve with it.
 However, we may continue developing it in the future for the sake of completeness.
 
-( Insert Pictures Here )
+![Animated Luster homepage](imgs/luster-main-page.gif)
 
 Our goal for the hackathon was to create *something* while also learning some new skills.
 We came up with a variety of really interesting ideas, but we chose this dating app because it was something that was out of everyone's comfort zones.

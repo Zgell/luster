@@ -83,10 +83,10 @@ const MainPage = () => {
     // <div className={[styles.bgimg, w3styles['w3-display-container'], w3styles['animate-gradient-opacity'], w3styles['w3-text-white']]}>
     <div className="bgimg w3-display-container animate-gradient-opacity w3-text-white display-middle-container">
       <div className="top-left-corner-title">
-          Dating App
+          Luster
       </div>
       <div className ="w3-center display-middle">
-        <h1 className="primary-title">DATING APP</h1>
+        <h1 className="primary-title">LUSTER</h1>
         <hr className="w3-border-white primary-divider" />
         <p className="primary-subtitle w3-center">Join now to find the love of your life.</p>
         <div className="w3-center">
