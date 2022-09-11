@@ -14,6 +14,7 @@ import 'firebase/auth';
 import {useAuthState} from 'react-firebase-hooks/auth';
 import {useCollectionData} from 'react-firebase-hooks/firestore';
 
+// initizalizing the database
 firebase.initializeApp({
   apiKey: "AIzaSyAxmc2jNPQwGZXW0OD2bsFzTHR5K3USwDM",
   authDomain: "slayqueen-3cd46.firebaseapp.com",
