@@ -2,6 +2,7 @@
 Represents the matchmaking of the application.
 */
 import './Match.css';
+import React from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../logo.svg';
 

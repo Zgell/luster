@@ -1,6 +1,7 @@
 /*
 Represents the main landing page of the application.
 */
+import React from 'react';
 import './MainPage.css';
 import { Link } from 'react-router-dom';
 import logo from '../logo.svg';

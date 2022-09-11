@@ -35,4 +35,10 @@ function App() {
   );
 }
 
+funciton SignIn() {
+  return (
+    <button onClick= {sighInWithGoogle}>Sign in with Google</button>
+  )
+}
+
 export default App;

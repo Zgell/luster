@@ -1,6 +1,7 @@
 /*
 Represents the login page of the application.
 */
+import React from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
 import logo from '../logo.svg';
