@@ -16,19 +16,12 @@ import {useCollectionData} from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
   apiKey: "AIzaSyAxmc2jNPQwGZXW0OD2bsFzTHR5K3USwDM",
-
   authDomain: "slayqueen-3cd46.firebaseapp.com",
-
   projectId: "slayqueen-3cd46",
-
   storageBucket: "slayqueen-3cd46.appspot.com",
-
   messagingSenderId: "1081722428055",
-
   appId: "1:1081722428055:web:ff86ea6c5364c983e367d2",
-
   measurementId: "G-JVGNXSN4HR"
-
 })
 
 const auth = firebase.auth();
@@ -97,6 +90,22 @@ function ChatRoom() {
 
   const [formValue, setFormaValue] = useState('');
 
+  // Event handler for the onSubmit={sendMessage}
+  const sendMessage = async(e) => {
+
+    e.preventDefault(); // When a form is submitted it will refresh the page.
+    // This prevents it 
+    
+    const {uid, photoURL} = auth.currentUser; // grab user id from current logged in user.
+
+    await messagesReg.add({
+      text: formValue,
+      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+      uid,
+      photoURL
+    }) // This creates a new document in firestore database
+
+  }
 return (<>
   <main>
     {messages && messages.map(msg => 
