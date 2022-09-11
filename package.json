@@ -1,5 +1,10 @@
 {
   "dependencies": {
-    "firebase": "^9.9.4"
+    "cors": "^2.8.5",
+    "ex": "^0.1.4",
+    "express": "^4.18.1",
+    "firebase": "^9.9.4",
+    "nodemon": "^2.0.19",
+    "socket.io": "^4.5.2"
   }
 }
